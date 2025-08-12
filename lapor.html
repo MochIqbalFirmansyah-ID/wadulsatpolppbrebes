@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>WADUL SATPOL - Satpol PP Kabupaten Brebes</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet" />
+</head>
+
+<body class="index-page">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">WadulSatpol</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======= Main ======= -->
+  <main class="main">
+    <section class="form-hero">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="form-card">
+              <h2 class="text-center mb-4">Formulir Pengaduan Masyarakat</h2>
+              <form id="laporForm">
+                <div class="mb-3">
+                  <label for="nama" class="form-label">Nama Lengkap</label>
+                  <input type="text" class="form-control" id="nama" name="nama" required>
+                </div>
+                <div class="mb-3">
+                  <label for="kontak" class="form-label">Nomor WhatsApp</label>
+                  <input type="tel" class="form-control" id="kontak" name="kontak" required>
+                </div>
+                <div class="mb-3">
+                  <label for="kategori" class="form-label">Kategori Laporan</label>
+                  <select class="form-select" id="kategori" name="kategori" required>
+                    <option value="">-- Pilih Kategori --</option>
+                    <option value="Ketertiban Umum">Ketertiban Umum dan Ketentraman Masyarakat</option>
+                    <option value="Pelanggaran Perda">Pelanggaran Perda</option>
+                    <option value="Lainnya">Lainnya</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="lokasi" class="form-label">Lokasi Kejadian</label>
+                  <input type="text" class="form-control" id="lokasi" name="lokasi" required>
+                </div>
+                <div class="mb-3">
+                  <label for="isi" class="form-label">Isi Laporan</label>
+                  <textarea class="form-control" id="isi" name="isi" rows="5" required></textarea>
+                </div>
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary btn-lg">Kirim Laporan</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+
+        <!-- Informasi Kontak -->
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">WADUL SATPOL</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Jl. Veteran No.25, Brebes</p>
+            <p>Jawa Tengah, Indonesia</p>
+            <p class="mt-3"><strong>Telepon:</strong> <span>(0283) 123456</span></p>
+            <p><strong>Email:</strong> <span>satpolpp@brebeskab.go.id</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-globe"></i></a>
+          </div>
+        </div>
+
+        <!-- Google Maps (Ukuran Kecil) -->
+        <div class="col-lg-8 col-md-6">
+          <h5 class="mb-3">Lokasi Kantor Satpol PP Brebes</h5>
+          <div class="rounded overflow-hidden shadow-sm" style="height: 200px;">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.904026050324!2d109.0507486!3d-6.881355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fba7cacfa1e3b%3A0x1cec46a57089e981!2sKantor%20Satpol%20PP%20Kab.%20Brebes!5e0!3m2!1sid!2sid!4v1722058972976!5m2!1sid!2sid"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container text-center mt-4">
+      <small class="text-muted">
+        © 2025 <strong>WADUL SATPOL</strong> – Satpol PP Kabupaten Brebes. All rights reserved.
+      </small>
+      <div class="credits small mt-1">
+        Template by <a href="https://bootstrapmade.com/" class="text-decoration-none">BootstrapMade</a> • Mod by Tim IT Brebes
+      </div>
+    </div>
+  </footer>
+  <!-- ======= End Footer ======= -->
+
+  <!-- Scroll Top Button -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+    <script>
+    document.getElementById("laporForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+     const nama = document.getElementById("nama").value;
+      const kontak = document.getElementById("kontak").value;
+      const kategori = document.getElementById("kategori").value;
+      const lokasi = document.getElementById("lokasi").value;
+      const isi = document.getElementById("isi").value;
+
+      const pesan = `Halo Admin Satpol PP Kabupaten Brebes, saya ${nama} ingin melaporkan:
+      Kategori: ${kategori}
+      Lokasi: ${lokasi}
+      Isi Laporan: ${isi}
+      Kontak: ${kontak}
+
+      Berikut saya lampirkan bukti pendukung berupa foto atau video dan share lokasi kejadian yang saya laporkan:`;
+
+      const url = `https://wa.me/6285822987633?text=${encodeURIComponent(pesan)}`;
+
+      window.open(url, '_blank');
+    });
+  </script>
+
+</body>
+
+</html>
