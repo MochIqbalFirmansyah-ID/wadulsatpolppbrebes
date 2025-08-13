@@ -51,13 +51,19 @@
       background:rgba(255,255,255,.85);
       border-bottom:1px solid rgba(15,23,42,.06);
     }
-    .brand{ gap:.75rem; flex-wrap:nowrap; overflow:hidden }
+    .brand{ 
+      gap:.75rem; 
+      flex-wrap:nowrap;             /* default desktop: satu baris */
+      align-items:center;
+      overflow:visible;             /* biar nggak kepotong */
+    }
     .brand-logo{ height:44px; flex:0 0 auto }
     .brand-brebes{ height:34px; flex:0 0 auto }
     .brand-title{
       font-family:Montserrat, Inter, sans-serif; font-weight:700; letter-spacing:.8px;
       color:#2b1f19; line-height:1; white-space:nowrap;
       font-size:clamp(18px, 2.4vw, 28px);
+      flex:0 1 auto;
     }
     .navmenu .nav-link{font-weight:500}
     .navmenu .nav-link.active, .navmenu .nav-link:hover{color:var(--brand)}
@@ -114,7 +120,8 @@
       border:1px solid rgba(15,23,42,.12); border-radius:10px; margin-right:.5rem; color:var(--ink);
     }
 
-    /* Mobile nav */
+    /* ====== Responsif Header Brand ====== */
+    /* Tablet & ke bawah: izinkan wrap + kecilkan logo */
     @media (max-width: 991.98px){
       .navmenu{ position:relative }
       .navmenu .nav{ display:none }
@@ -125,12 +132,30 @@
       }
       .navmenu.open .nav .nav-link{ display:block; padding:.55rem 1rem }
       .mobile-nav-toggle{ display:inline-flex !important }
-      .brand-brebes{ display:none }         /* hemat ruang tablet */
-      .brand-logo{ height:42px }
+
+      .brand{
+        flex-wrap:wrap;             /* BOLEH turun baris */
+        gap:.5rem .6rem;
+      }
+      .brand-logo{ height:36px }    /* sedikit kecil */
+      .brand-brebes{ height:28px }  /* kecil lagi */
+      .brand-title{
+        order:3;                    /* taruh judul di baris berikutnya */
+        flex:1 0 100%;
+        text-align:center;
+        white-space:normal;         /* biar bisa pindah baris */
+        font-size:18px;
+      }
     }
+
+    /* Mobile kecil */
     @media (max-width: 575.98px){
-      .brand-title{ font-size:18px }
-      .brand-logo{ height:38px }
+      .brand{
+        justify-content:center;     /* pusatkan biar rapi */
+      }
+      .brand-logo{ height:32px }
+      .brand-brebes{ height:24px }
+      .brand-title{ font-size:16px; line-height:1.1 }
     }
 
     /* a11y */
@@ -145,12 +170,12 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl d-flex align-items-center">
       <a href="index.html" class="brand d-flex align-items-center me-auto text-decoration-none">
-         <img src="assets/img/brebes.png" alt="Logo Satpol PP" class="brand-logo" loading="eager">
+        <img src="assets/img/brebes.png" alt="Logo Pemerintah Kabupaten Brebes" class="brand-logo" loading="eager">
         <img src="assets/img/logo.png" alt="Logo Satpol PP" class="brand-logo" loading="eager">
         <span class="brand-title">WADUL SATPOL PP</span>
         <img src="assets/img/beres.png" alt="Brebes Beres" class="brand-brebes" loading="eager">
-         <img src="assets/img/Logo2.png" alt="Brebes BerAKHLAK" class="brand-brebes" loading="eager">
-          <img src="assets/img/Logo_3.png" alt="Brebes Beres" class="brand-brebes" loading="eager">
+        <img src="assets/img/Logo2.png" alt="BerAKHLAK" class="brand-brebes" loading="eager">
+        <img src="assets/img/Logo_3.png" alt="Bangga Melayani Bangsa" class="brand-brebes" loading="eager">
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -253,8 +278,8 @@
             <a href="#"><i class="bi bi-instagram"></i></a>
             <a href="#"><i class="bi bi-globe"></i></a>
           </div>
-           <img src="assets/img/Logo2.png" alt="Brebes Beres" class="brand-brebes" loading="eager">
-           <img src="assets/img/Logo_3.png" alt="Brebes Beres" class="brand-brebes" loading="eager">
+          <img src="assets/img/Logo2.png" alt="BerAKHLAK" class="brand-brebes" loading="eager">
+          <img src="assets/img/Logo_3.png" alt="Bangga Melayani Bangsa" class="brand-brebes" loading="eager">
         </div>
 
         <div class="col-lg-8 col-md-6">
